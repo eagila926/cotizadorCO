@@ -145,7 +145,7 @@
   .dlg-recetas__header {
     padding: 16px 24px;
     border-bottom: 1px solid #e5e7eb;
-    background: linear-gradient(135deg,#0d6efd,#2563eb);
+    background: linear-gradient(135deg,#C9A84C,#8f7226);
     color: #fff;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@
   .dlg-recetas__input:focus,
   .dlg-recetas__input-date:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #C9A84C;
     box-shadow: 0 0 0 1px rgba(37,99,235,.25);
   }
 
@@ -236,7 +236,7 @@
 
   .btn-primary {
     padding: 8px 16px;
-    background:#0d6efd;
+    background:#C9A84C;
     border:none;
     color:#fff;
     border-radius:999px;
@@ -613,7 +613,7 @@
                   SO.@if($soPrefill) {{ ' ' . $soPrefill }} @endif
                 </div>
                 <p class="fabri" style="font-size:20px; display:block; text-align:right; margin-right:-10px; margin-top:-30px">
-                    Elaborado por: Escollanos
+                    Elaborado por: Cotizador Ortomolecular
                 </p>
             </div>
         </div>

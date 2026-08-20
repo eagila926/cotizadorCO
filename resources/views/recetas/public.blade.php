@@ -32,9 +32,9 @@
     justify-content: center;
     min-height: 36px;
     padding: 7px 14px;
-    border: 1px solid #0d6efd;
+    border: 1px solid #C9A84C;
     border-radius: 4px;
-    background: #0d6efd;
+    background: #C9A84C;
     color: #fff;
     font: 600 14px Arial, sans-serif;
     text-decoration: none;
@@ -42,7 +42,7 @@
   }
   .toolbar a {
     background: #fff;
-    color: #0d6efd;
+    color: #8f7226;
   }
   .sheet {
     width: 210mm;

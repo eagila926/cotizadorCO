@@ -22,7 +22,7 @@
   .navbar{ padding-top: .25rem; padding-bottom: .25rem; }
 
   /* Gradiente del navbar (opcional) */
-  .navbar-gradient{ background: linear-gradient(135deg,#0d6efd,#198754); }
+  .navbar-gradient{ background:#252217; }
 
   /* Enlaces más compactos */
   .navbar .nav-link{ padding-top:.35rem; padding-bottom:.35rem; }
@@ -31,7 +31,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
-      <img src="{{ asset('images/logo-dark.png') }}" alt="Escollanos" class="brand-logo">
+      <span style="width:38px;height:38px;border-radius:12px;background:#C9A84C;color:#252217;display:grid;place-items:center;font-weight:800">CO</span>
+      <span style="color:#fff;font-weight:800">Cotizador <small style="display:block;color:#C9A84C;font-size:.58rem;letter-spacing:.13em;text-transform:uppercase">Ortomolecular</small></span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
@@ -58,36 +59,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{ route('fe.index') }}">Fórmulas Establecidas</a></li>
               <li><a class="dropdown-item" href="{{ route('formulas.nuevas') }}">Fórmulas Nuevas</a></li>
-              <li>
-                <a class="dropdown-item {{ request()->routeIs('formulas-homeo.*') ? 'active' : '' }}"
-                   href="{{ route('formulas-homeo.nueva') }}">
-                  Fórmulas Nuevas Homeopáticas
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="{{ route('formulas-homeo.establecidas') }}">
-                  Fórmulas Establecidas Homeopáticas
-                </a>
-              </li>
               <li><a class="dropdown-item" href="{{ route('formulas.recientes') }}">Fórmulas Recientes</a></li>
-            </ul>
-          </li>
-        @endif
-
-        {{-- Recetas: todos los usuarios autenticados --}}
-        @if($user)
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle {{ request()->routeIs('recetas.*') ? 'fw-semibold' : '' }}"
-               href="#" role="button" data-bs-toggle="dropdown">
-              <i class="bi bi-journal-text"></i> Recetas
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item {{ request()->routeIs('recetas.homeopatico') ? 'active' : '' }}"
-                   href="{{ route('recetas.homeopatico') }}">
-                  Recetas Homeopático
-                </a>
-              </li>
             </ul>
           </li>
         @endif

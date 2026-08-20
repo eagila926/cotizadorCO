@@ -3,7 +3,7 @@
 
 {{ $mensaje }}
 
-@component('mail::button', ['url' => 'https://appsescollanos.com'])
+@component('mail::button', ['url' => config('app.url')])
 Ir al sitio
 @endcomponent
 

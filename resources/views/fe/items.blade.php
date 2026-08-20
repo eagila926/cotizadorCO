@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Ítems de la fórmula '.$f->codigo.' | Ortomed')
+@section('title','Ítems de la fórmula '.$f->codigo.' | Cotizador Ortomolecular')
 
 @section('content')
 <div class="card">

@@ -55,7 +55,7 @@ class PruebaMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Correo de prueba desde OrtoMed')
+        return $this->subject('Correo de prueba desde Cotizador Ortomolecular')
                     ->markdown('emails.prueba')
                     ->with([
                         'usuario' => 'Elvis Agila',

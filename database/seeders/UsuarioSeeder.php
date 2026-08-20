@@ -12,8 +12,8 @@ class UsuarioSeeder extends Seeder
     {
         DB::table('usuarios')->insert([
             'nombre'   => 'Admin',
-            'apellido' => 'Escollanos',
-            'correo'   => 'admin@escollanos.com',
+            'apellido' => 'Ortomolecular',
+            'correo'   => 'admin@cotizadorortomolecular.com',
             'rol'      => 'ADMIN',
             'password' => Hash::make('admin123'), // se guarda hasheada
             'estado'   => 1,

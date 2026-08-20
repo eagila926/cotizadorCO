@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Iniciar sesión</title>
+  <title>Iniciar sesión | Cotizador Ortomolecular</title>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,18 +14,18 @@
 
   <style>
     :root{
-      --brand-1:#6a5cff;   /* morado */
-      --brand-2:#19c3ff;   /* celeste */
-      --brand-3:#7b61ff;   /* morado botón */
+      --brand-1:#252217;
+      --brand-2:#514629;
+      --brand-3:#C9A84C;
       --card-radius:22px;
     }
     *{font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
 
     body{
       min-height:100vh;
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(123,97,255,.25) 0%, transparent 60%),
-                  radial-gradient(1000px 500px at 90% 90%, rgba(25,195,255,.25) 0%, transparent 60%),
-                  #0f1020;
+      background: radial-gradient(900px 500px at 10% 10%, rgba(201,168,76,.28) 0%, transparent 60%),
+                  radial-gradient(800px 500px at 90% 90%, rgba(201,168,76,.14) 0%, transparent 60%),
+                  #1d1b15;
       display:grid; place-items:center;
       padding:32px 16px;
     }
@@ -33,7 +33,7 @@
     .auth-card{
       width:min(1060px, 100%);
       border:0;
-      border-radius:var(--card-radius);
+      border-radius:28px;
       overflow:hidden;
       box-shadow: 0 20px 60px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.04);
       background:transparent;
@@ -51,7 +51,7 @@
       position:relative;
       padding:48px 44px;
       color:#fff;
-      background: linear-gradient(135deg, var(--brand-1) 0%, var(--brand-2) 100%);
+      background: radial-gradient(circle at 15% 85%,rgba(201,168,76,.25),transparent 35%),linear-gradient(135deg,var(--brand-1),var(--brand-2));
       isolation:isolate;
     }
     .auth-visual::after{
@@ -108,13 +108,13 @@
 
     /* Botón */
     .btn-brand{
-      background: linear-gradient(135deg, var(--brand-3), var(--brand-1));
+      background: var(--brand-3);
       border:none;
       height:48px;
       font-weight:700;
       letter-spacing:.3px;
       transition: transform .08s ease, filter .15s ease;
-      color:#fff;
+      color:#252217;
     }
     .btn-brand:hover{ filter:brightness(1.05); }
     .btn-brand:active{ transform: translateY(1px); }
@@ -146,12 +146,12 @@
 
       <!-- Lado izquierdo (visual) -->
       <div class="auth-visual">
-        <div class="brand">ESCOLLANOS CIA LTDA</div>
+        <div class="brand" style="color:#C9A84C;letter-spacing:.12em">COTIZADOR ORTOMOLECULAR</div>
         <div class="welcome">
-          <h1>Bienvenido a Ortomed</h1>
+          <h1>Precisión en cada fórmula.</h1>
           <p>Accede para gestionar fórmulas, activos y pedidos en un entorno seguro.</p>
         </div>
-        <div class="footer-note">© Escollanos Medicamentos Biológicos - 2026</div>
+        <div class="footer-note">© Cotizador Ortomolecular · 2026</div>
       </div>
 
       <!-- Lado derecho (formulario) -->

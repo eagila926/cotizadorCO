@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Fórmulas establecidas homeopáticas | Ortomed')
+@section('title', 'Fórmulas establecidas homeopáticas | Cotizador Ortomolecular')
 
 @section('content')
 <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Resumen – Cápsulas | Ortomed')
+@section('title','Resumen – Cápsulas | Cotizador Ortomolecular')
 
 @section('content')
 

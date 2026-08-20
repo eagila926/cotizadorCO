@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Nueva fórmula homeopática | Ortomed')
+@section('title', 'Nueva fórmula homeopática | Cotizador Ortomolecular')
 
 @push('head')
 <style>

@@ -13,7 +13,7 @@
 </style>
 @endpush
 
-@section('title', 'Inicio | Ortomed')
+@section('title', 'Inicio | Cotizador Ortomolecular')
 
 @section('content')
   <div class="card">

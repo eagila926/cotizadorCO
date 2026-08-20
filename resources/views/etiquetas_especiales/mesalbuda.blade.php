@@ -232,7 +232,7 @@
         padding: 16px 24px;
         border-bottom: 1px solid #e5e7eb;
         border-radius: 18px 18px 0 0;
-        background: linear-gradient(135deg, #0d6efd, #2563eb);
+        background: linear-gradient(135deg, #C9A84C, #8f7226);
         color: #fff;
     }
 
@@ -299,7 +299,7 @@
     .dlg-recetas__input:focus,
     .dlg-recetas__input-date:focus {
         outline: none;
-        border-color: #2563eb;
+        border-color: #C9A84C;
         box-shadow: 0 0 0 1px rgba(37, 99, 235, .25);
     }
 
@@ -320,7 +320,7 @@
         padding: 8px 16px;
         border: none;
         border-radius: 999px;
-        background: #0d6efd;
+        background: #C9A84C;
         color: #fff;
         box-shadow: 0 6px 14px rgba(37, 99, 235, .35);
         font-size: 14px;
