@@ -364,7 +364,7 @@ class FormulaController extends Controller
             $totalMasaMes = (float)$rows->sum('masa_mes');
             $totalGeneral = (float)$rows->sum('subtotal'); // $/día
 
-            $precio_med = max(90000, ($totalGeneral * 30) + 35000);
+            $precio_med = max(67500, ($totalGeneral * 30) + 35000);
             $precio_med = $this->roundUpToStep($precio_med, 0.10);
 
             $precio_dis = $precio_med * 0.65;
@@ -575,7 +575,7 @@ class FormulaController extends Controller
 
         // Precios (tu criterio actual)
         //$precio_med = max(10, $totalGeneral * 30);
-        $precio_med = max(90000, ($totalGeneral * 30) + 35000);
+        $precio_med = max(67500, ($totalGeneral * 30) + 35000);
         $precio_med = $this->roundUpToStep($precio_med, 0.10);
 
         $precio_dis = $precio_med * 0.65;
@@ -660,7 +660,7 @@ class FormulaController extends Controller
             $totalGeneralDia = (float)$rows->sum('subtotal');
 
             // 2.2) Regla de precio: (total*30)+4 y piso 12
-            $precio_med = max(90000, ($totalGeneral * 30) + 35000);
+            $precio_med = max(67500, ($totalGeneral * 30) + 35000);
             $precio_med = $this->roundUpToStep($precio_med, 0.10);
 
 
@@ -944,7 +944,7 @@ class FormulaController extends Controller
             }
 
             // Regla: (total*30)+4 con piso 12
-            $precio_med = max(90000, ($totalGeneral * 30) + 35000);
+            $precio_med = max(67500, ($totalGeneral * 30) + 35000);
             $precio_med = $this->roundUpToStep($precio_med, 0.10);
 
 
